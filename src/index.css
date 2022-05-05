@@ -18,3 +18,11 @@ code {
 
 }
 
+#image {
+  width:1000px; /*width of your image*/
+  height:1000px; /*height of your image*/
+  background-image:url('./img/Classic Cars Logo 3.png');
+  margin:0; /* If you want no margin */
+  padding:0; /*if your want to padding */
+}
+
