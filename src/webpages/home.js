@@ -25,13 +25,18 @@ if (error) {
         return <div>Loading...</div>;
     } else {
         return (
-            <ul>
-                {users.map(user => (
-                <li key={user.employeeNumber}>
-                   <Link to={`user/${user.employeeNumber}`}>{user.firstName} {user.lastName}</Link>
-                </li>
-                ))}
-            </ul>
+            <div id="body">
+                <div id="image"/>
+                <div id="user-list">
+                    <ul>
+                        {users.map(user => (
+                        <li key={user.employeeNumber}>
+                        <Link to={`user/${user.employeeNumber}`}>{user.firstName} {user.lastName}</Link>
+                        </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
         );
     }
 }

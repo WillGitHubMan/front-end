@@ -13,7 +13,7 @@ const Webpages = () => {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />}></Route>
-                <Route path = "/user" element = {<User />} />
+                <Route path = "/user/:id" element = {<User />} />
             </Routes>
         </Router>
     );
